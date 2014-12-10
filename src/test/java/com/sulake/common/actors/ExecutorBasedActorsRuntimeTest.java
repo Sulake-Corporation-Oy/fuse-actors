@@ -38,6 +38,7 @@ public class ExecutorBasedActorsRuntimeTest {
         actor2 = new TestingActor();
 
         runtime = createRuntime(DEFAULT_MESSAGE_LIMIT, DEFAULT_THREADS);
+        runtime.setShutdownWaitTimeInMillis(0);
         runtime.start();
     }
 
